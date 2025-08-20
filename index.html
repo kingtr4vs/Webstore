@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frost Survival- Best Minecraft Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Real-time Minecraft Player Counter -->
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+</head>
+<body>
+    <div class="particles-background">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="FrostSurvival Logo">
+                <span>Frost Survival</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#server-info">Server Info</a></li>
+                <li><a href="#ranks">Ranks</a></li>
+                <li><a href="#items">Items</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="LYTHCRAFT">Frost Survival</h1>
+            <p class="hero-subtitle">The Best Minecraft Server Experience</p>
+            <div class="server-status">
+                <div class="status-indicator">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span data-playercounter-ip="play.frostsurvival.tech" data-playercounter-status id="serverStatus">Checking...</span>
+                </div>
+                <div class="player-count">
+                    <i class="fas fa-users"></i>
+                    <span class="player-count-number" 
+                          data-playercounter-ip="play.frostsurvival.tech" 
+                          data-playercounter-format="{online}">0</span>
+                    <span>Players Online</span>
+                </div>
+            </div>
+            <div class="server-ip">
+                <div class="ip-container">
+                    <span class="ip-label">Server IP:</span>
+                    <span class="ip-address" id="serverIP">play.FrostSurvival.tech</span>
+                    <button class="copy-btn" onclick="copyIP()">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <div class="server-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Online Players:</span>
+                        <span class="detail-value" 
+                              data-playercounter-ip="play.frostsurvival.tech" 
+                              data-playercounter-format="{online}/{max}">0/150</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#ranks" class="btn btn-primary">
+                    <i class="fas fa-crown"></i>
+                    Buy Ranks
+                </a>
+                <a href="#items" class="btn btn-secondary">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shop Items
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="minecraft-character"></div>
+        </div>
+    </section>
+
+    <!-- Server Info Section -->
+    <section id="server-info" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-server"></i>
+                Server Information
+            </h2>
+            <div class="server-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Game Modes</h3>
+                        <p>Survival, Crystal PvP</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Version</h3>
+                        <p>1.20.x - 1.21.4</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Uptime</h3>
+                        <p>24/7 Online</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Max Players</h3>
+                        <p>150 Players</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranks Section -->
+    <section id="ranks" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-crown"></i>
+                Server Ranks
+            </h2>
+            <div class="ranks-grid">
+                <div class="rank-card bronze">
+                    <div class="rank-header">
+                        <i class="fas fa-medal"></i>
+                        <h3>Legend 7days</h3>
+                        <div class="price">$5</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Prefix [7days]</li>
+                        <li><i class="fas fa-check"></i> /echest</li>
+                        <li><i class="fas fa-check"></i> /anvil</li>
+                        <li><i class="fas fa-check"></i> 3 Homes</li>
+                        <li><i
+class="fas fa-check"></i> Priority Queue</li>
+                    </ul>
+                    <button class="buy-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now
+                    </button>
+                </div>
+
+                <div class="rank-card silver popular">
+                    <div class="popular-badge">POPULAR</div>
+                    <div class="rank-header">
+                        <i class="fas fa-medal"></i>
+                        <h3>Legend 30days</h3>
+                        <div class="price">$15</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Prefix [30days]</li>
+                        <li><i class="fas fa-check"></i> /echest</li>
+                        <li><i class="fas fa-check"></i> Priority Queue</li>
+                        <li><i class="fas fa-check"></i> /anvil</li>
+                        <li><i class="fas fa-check"></i> 5 Homes</li>
+                        <li><i class="fas fa-check"></i> /workbench</li>
+                    </ul>
+                    <button class="buy-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now
+                    </button>
+                </div>
+
+                <div class="rank-card gold">
+                    <div class="rank-header">
+                        <i class="fas fa-medal"></i>
+                        <h3>Frost Rank</h3>
+                        <div class="price">$25</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Prefix [Frost]</li>
+                        <li><i class="fas fa-check"></i>Blue chat color</li>
+                        <li><i class="fas fa-check"></i> 10 Homes</li>
+                        <li><i class="fas fa-check"></i> /enderchest</li>
+                        <li><i class="fas fa-check"></i> Priority queue</li>
+                    </ul>
+                    <button class="buy-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now
+                    </button>
+                </div>
+
+                <div class="rank-card diamond">
+                    <div class="rank-header">
+                        <i class="fas fa-gem"></i>
+                        <h3>Frostbite</h3>
+                        <div class="price">$30</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Prefix [Frostbite]</li>
+                        <li><i class="fas fa-check"></i> Highlighted Chat Messages</li>
+                        <li><i class="fas fa-check"></i> 15 Homes</li>
+                        <li><i class="fas fa-check"></i> Priority Queue</li>
+                        <li><i class="fas fa-check"></i> /echest</li>
+                        <li><i class="fas fa-check"></i> Custom nick</li>
+                    </ul>
+                    <button class="buy-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Items Section -->
+    <section id="items" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-shopping-cart"></i>
+                Shop Items
+            </h2>
+            <div class="items-grid">
+                <div class="item-card">
+                    <div class="item-icon">
+                        <img src="minecraft-sword.svg" alt="Diamond Sword">
+                    </div>
+                    <h3>Diamond Sword</h3>
+                    <p>Enchanted diamond sword with Sharpness V</p>
+                    <div class="item-price">$2</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Diamond Armor Set</h3>
+                    <p>Full diamond armor set with Protection IV</p>
+                    <div class="item-price">$5</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Enchanted Bow</h3>
+                    <p>Bow with Power V and Infinity</p>
+                    <div class="item-price">$1</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">
+                        <img src="minecraft-pickaxe.svg" alt="Netherite Pickaxe">
+                    </div>
+                    <h3>Netherite Pickaxe</h3>
+                    <p>Netherite pickaxe with Efficiency V</p>
+                    <div class="item-price">$3</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">
+                        <img src="minecraft-diamond.svg" alt="Diamond">
+                    </div>
+                    <h3>Stack Diamond</h3>
+                    <p>64x Diamond blocks</p>
+                    <div class="item-price">$10</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="item-card">
+                    <div class="item-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Potion Pack</h3>
+                    <p>Complete potion set for PvP</p>
+                    <div class="item-price">$10</div>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-gavel"></i>
+                Server Rules
+            </h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">1</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>Griefing</h3>
+                        <p>Destroying other players' builds is allowed</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">2</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>No Cheating/Hacking</h3>
+                        <p>Using hacks, cheats, or illegal mods will result in permanent ban</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">3</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>Respect Others</h3>
+                        <p>Treat fellow players with respect. No toxic behavior, spam, or racism</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">4</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>No Advertising</h3>
+                        <p>Advertising other servers or websites is not allowed</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">5</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>Use English in Global Chat</h3>
+                        <p>Please use English in global chat to ensure everyone can communicate</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-header">
+                        <div class="rule-number">6</div>
+                        <div class="rule-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                    </div>
+                    <div class="rule-content">
+                        <h3>Follow Staff Instructions</h3>
+                        <p>Always follow instructions from staff members and report any issues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i>
+                Contact Us
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord</h3>
+                    <p>Join our Discord server</p>
+                    <a href="#" class="contact-btn">discord.gg/yT2s7Bavx7</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Contact admin via WhatsApp</p>
+                    <a href="#" class="contact-btn">Chat WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>Email for inquiries</p>
+                    <a href="mailto:AdminsFs23@gmail.com" class="contact-btn">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <img src="logo.svg" alt="LythCraft Logo" style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
+                        Frost Survival
+                    </h3>
+                    <p>The best Minecraft server with friendly community and exciting gameplay.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#ranks">Ranks</a></li>
+                        <li><a href="#items">Items</a></li>
+                        <li><a href="#rules">Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Bug Report</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Frost Network. All rights reserved. Made with ❤️ for Minecraft players.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
