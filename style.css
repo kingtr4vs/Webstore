@@ -166,25 +166,6 @@ body {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 2rem;
-
-.back-button:hover {
-    color: #4169e1;
-    text-shadow: 0 0 5px #4169e1;
-}
-
-.back-button::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #4169e1;
-    transition: width 0.3s ease;
-}
-
-.back-button:hover::after {
-    width: 100%;
 }
 
 .status-indicator {
@@ -868,6 +849,7 @@ body {
     }
 
 } 
+
 
 
 
