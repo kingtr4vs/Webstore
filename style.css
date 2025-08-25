@@ -155,19 +155,6 @@ body {
     flex-wrap: wrap;
 }
 
-.back-button {
-    background: #2563eb;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 2rem;
-}
-
 .status-indicator {
     display: flex;
     align-items: center;
@@ -849,6 +836,7 @@ body {
     }
 
 } 
+
 
 
 
