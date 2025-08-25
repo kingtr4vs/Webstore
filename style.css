@@ -167,9 +167,6 @@ body {
     display: inline-block;
     margin-bottom: 2rem;
 }
-      .back-button:hover {
-        background: #3b82f6;
-}
 
 .status-indicator {
     display: flex;
@@ -852,6 +849,7 @@ body {
     }
 
 } 
+
 
 
 
